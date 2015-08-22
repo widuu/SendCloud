@@ -25,7 +25,7 @@ class Stats extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function get_stats($type = 1,$days=0,$start_date,$end_date,$api_user_list='',$label_id_list='',$domain_list='',$aggregate=1){
+	public static function get_stats($type = 1,$days=0,$start_date,$end_date,$api_user_list='',$label_id_list='',$domain_list='',$aggregate=1){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 时间设置
@@ -76,7 +76,7 @@ class Stats extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function queue_status(){
+	public static function queue_status(){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 构建发送URL
@@ -104,7 +104,7 @@ class Stats extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function get_spamReported($days,$start_date,$end_date,$email,$start,$limit){
+	public static function get_spamReported($days,$start_date,$end_date,$email,$start,$limit){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 时间设置

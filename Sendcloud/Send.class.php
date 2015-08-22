@@ -30,7 +30,7 @@ class Send extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function send_template($from,$sub,$to=array(),$subject='',$template_invoke_name,$fromname='',$replyto='',$label='',$headers=array(),$files='',$resp_email_id=true,$use_maillist=false,$gzip_compress=false){
+	public static function send_template($from,$sub,$to=array(),$subject='',$template_invoke_name,$fromname='',$replyto='',$label='',$headers=array(),$files='',$resp_email_id=true,$use_maillist=false,$gzip_compress=false){
 		
 		// 用户权限设置
 		$params = self::set_auth();
@@ -99,7 +99,7 @@ class Send extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function send($from,$to=array(),$subject,$html,$fromname='',$bcc='',$cc='',$replyto='',$label='',$headers=array(),$files='',$x_smtpapi=array(),$resp_email_id=true,$use_maillist=false,$gzip_compress=false){
+	public static function send($from,$to=array(),$subject,$html,$fromname='',$bcc='',$cc='',$replyto='',$label='',$headers=array(),$files='',$x_smtpapi=array(),$resp_email_id=true,$use_maillist=false,$gzip_compress=false){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 发送人

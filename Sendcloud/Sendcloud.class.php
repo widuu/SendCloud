@@ -63,5 +63,4 @@ class Sendcloud{
 		$params['api_key']  = self::$api_key;
 		return $params;
 	}
-
 }

@@ -51,7 +51,7 @@ class Address extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function create_address($address,$name,$description=''){
+	public static function create_address($address,$name,$description=''){
 		// 描述信息
 		if( !empty($description) ) $params['description'] = $description;
 		// 用户权限设置
@@ -82,7 +82,7 @@ class Address extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function update_address($address,$toAddress='',$name='',$description=''){
+	public static function update_address($address,$toAddress='',$name='',$description=''){
 		// 描述信息
 		if( !empty($description) ) $params['description'] = $description;
 		// 用户权限设置
@@ -111,7 +111,7 @@ class Address extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function delete_address($address){
+	public static function delete_address($address){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 参数设置
@@ -139,7 +139,7 @@ class Address extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function list_member($mail_list_addr,$member_addr='',$start=0,$limit=100){
+	public static function list_member($mail_list_addr,$member_addr='',$start=0,$limit=100){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 参数设置
@@ -174,7 +174,7 @@ class Address extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function add_member($mail_list_addr,$member_addr,$name=array(),$vars=array(),$upsert=false){
+	public static function add_member($mail_list_addr,$member_addr,$name=array(),$vars=array(),$upsert=false){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 更新设置
@@ -215,7 +215,7 @@ class Address extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function update_member($mail_list_addr,$member_addr,$name=array(),$vars=array()){
+	public static function update_member($mail_list_addr,$member_addr,$name=array(),$vars=array()){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 地址信息
@@ -252,7 +252,7 @@ class Address extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function delete_member($mail_list_addr,$member_addr){
+	public static function delete_member($mail_list_addr,$member_addr){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 地址信息

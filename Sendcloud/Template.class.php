@@ -21,7 +21,7 @@ class Template extends Sendcloud{
 	 * @return boolean|array 	  成功模板列表，否则返回false
 	 */
 
-	public  function get_template($invoke_name='',$start=0,$limit=100){
+	public  static function get_template($invoke_name='',$start=0,$limit=100){
 		// 用户权限设置
 		$params = self::set_auth(); 
 		if( !empty($invoke_name) ) $params['invoke_name'] = $invoke_name;
@@ -50,7 +50,7 @@ class Template extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function add_template($invoke_name,$name,$html,$text='',$subject,$email_type=1){
+	public static function add_template($invoke_name,$name,$html,$text='',$subject,$email_type=1){
 		$param_key = array('invoke_name','name','html','text','subject','email_type');
 		// 用户权限设置
 		$params = self::set_auth();
@@ -79,7 +79,7 @@ class Template extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function update_template($invoke_name,$name='',$html='',$subject='',$email_type=''){
+	public static function update_template($invoke_name,$name='',$html='',$subject='',$email_type=''){
 		$param_key = array('invoke_name','name','html','subject','email_type');
 		// 用户权限设置
 		$params = self::set_auth();
@@ -104,7 +104,7 @@ class Template extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function delete_template($invoke_name){
+	public static function delete_template($invoke_name){
 		// 用户权限设置
 		$params = self::set_auth();
 		$params['invoke_name'] = $invoke_name;

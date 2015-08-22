@@ -17,7 +17,7 @@ class User extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function get_userinfo(){
+	public static function get_userinfo(){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 构建发送URL
@@ -40,7 +40,7 @@ class User extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function get_apiuser($api_user_type=1){
+	public static function get_apiuser($api_user_type=1){
 		// 用户权限设置
 		$params = self::set_auth();
 		// api user 类型
@@ -65,7 +65,7 @@ class User extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function get_domain($domain_type=1){
+	public static function get_domain($domain_type=1){
 		// 用户权限设置
 		$params = self::set_auth();
 		// api user 类型
@@ -83,4 +83,5 @@ class User extends Sendcloud{
 		// 返回API User 信息
 		return self::return_info(true,$send_result['domainList']);
 	}
+
 }

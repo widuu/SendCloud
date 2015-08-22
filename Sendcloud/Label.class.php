@@ -19,7 +19,7 @@ class Label extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function list_label($start=0,$limit=100){
+	public static function list_label($start=0,$limit=100){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 参数设置
@@ -45,7 +45,7 @@ class Label extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function get_label($labelid){
+	public static function get_label($labelid){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 参数设置
@@ -70,7 +70,7 @@ class Label extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function add_label($label_name){
+	public static function add_label($label_name){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 参数设置
@@ -95,7 +95,7 @@ class Label extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function add_label($labelId){
+	public static function add_label($labelId){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 参数设置
@@ -121,7 +121,7 @@ class Label extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function update_label($labelId,$labelName){
+	public static function update_label($labelId,$labelName){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 参数设置

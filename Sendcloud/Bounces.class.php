@@ -23,7 +23,7 @@ class Bounces extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function get_bounces($days,$start_date,$end_date,$email,$start,$limit){
+	public static function get_bounces($days,$start_date,$end_date,$email,$start,$limit){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 时间设置
@@ -60,7 +60,7 @@ class Bounces extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function delete_bounces($start_date,$end_date,$email){
+	public static function delete_bounces($start_date,$end_date,$email){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 可选参数设置
@@ -90,7 +90,7 @@ class Bounces extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public function count_bounces($days,$start_date,$end_date,$email){
+	public static function count_bounces($days,$start_date,$end_date,$email){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 时间设置
