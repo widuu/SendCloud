@@ -40,7 +40,7 @@ class Send extends Sendcloud{
 		// 发送地址和变量判断
 		if( $use_maillist == false ){
 			$sub_json['to']  = $to;
-			if( !empty($sub) )  $sub_json['to'] = $sub;
+			if( !empty($sub) )  $sub_json['sub'] = $sub;
 			$params['substitution_vars'] = json_encode($sub_json);
 			$params['use_maillist'] = 'false';
 		}else{ 
