@@ -95,7 +95,7 @@ class Label extends Sendcloud{
 	 * @author widuu <admin@widuu.com>
 	 */
 
-	public static function add_label($labelId){
+	public static function delete_label($labelId){
 		// 用户权限设置
 		$params = self::set_auth();
 		// 参数设置

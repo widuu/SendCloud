@@ -8,9 +8,9 @@
  * @date      2015/08/20
  */
 
-define('API_USER','your user');
+define('API_USER','ttchina_ses');
 
-define('API_KEY','your key');
+define('API_KEY','7Ag7e2JzMp36E9pq');
 
 class Config{
 
