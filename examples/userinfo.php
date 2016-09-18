@@ -1,8 +1,12 @@
 <?php 
 
-// 自动加载命名空间和配置方法，在Config.php中设置
 //自己的API_User和API_KEY
 
+define('API_USER','ttchina_ses');
+
+define('API_KEY','7Ag7e2JzMp36E9pq');
+
+require 'vendor/autoload.php';
 
 // 获取用户信息
 $userinfo = Sendcloud\User::get_userinfo();
