@@ -1,0 +1,23 @@
+{
+    "name": "widuu/send_cloud",
+    "require": {
+	    "php": ">=5.4.0",
+	},
+    "authors": [
+        {
+            "name": "widuu",
+            "email": "admin@widuu.com"
+        }
+    ],
+    "keywords": [
+	    "sendCloud",
+	    "Thinkphp",
+	    "mail",
+	],
+    "license": "Apache2",
+    "autoload": {
+    "psr-4": {
+      "Sendcloud\\": "src/"
+    }
+  }
+}
