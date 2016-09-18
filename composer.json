@@ -1,7 +1,7 @@
 {
     "name": "widuu/send_cloud",
     "require": {
-	    "php": ">=5.4.0",
+	    "php": ">=5.4.0"
 	},
     "authors": [
         {
@@ -16,8 +16,8 @@
 	],
     "license": "Apache2",
     "autoload": {
-    "psr-4": {
-      "Sendcloud\\": "src/"
-    }
-  }
+	    "psr-4": {
+	      "Sendcloud\\": "src/"
+	    }
+  	}
 }
