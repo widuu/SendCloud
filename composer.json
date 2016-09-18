@@ -1,5 +1,5 @@
 {
-    "name": "widuu/sendCloud",
+    "name": "widuu/sendcloud",
     "description": "Sohu SendCloud PHP SDK",
     "require": {
 	    "php": ">=5.4.0"
